@@ -2,14 +2,13 @@ with
 
 source as (
 
-    select * from {{ source('raw', 'info_dump2') }}
+    select * from {{ source('raw', 'info_dump_2') }}
 
 ),
 
 renamed as (
 
     select
-
         release_date,
         achievements,
         movies,

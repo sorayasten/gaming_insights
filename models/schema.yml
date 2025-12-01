@@ -16,8 +16,8 @@
          identifier: game_time_monthly
        - name: info_dump
          identifier: info_dump
-       - name: info_dump2
-         identifier: info_dump2
+       - name: info_dump_2
+         identifier: info_dump_2
        - name: meta_reviews
          identifier: meta_reviews
        - name: metacritic
