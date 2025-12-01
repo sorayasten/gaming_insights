@@ -1,0 +1,32 @@
+ # schema.yml
+
+ version: 2
+
+ sources:
+   - name: raw
+     database: final-project-479910
+     schema: raw_data
+     loader: bigquery
+     description: Data on the gaming indutry
+     freshness:
+       warn_after: {count: 12, period: hour}
+       error_after: {count: 24, period: hour}
+     tables:
+       - name: game_time_monthly
+         identifier: game_time_monthly
+       - name: info_dump
+         identifier: info_dump
+       - name: info_dump_2
+         identifier: info_dump_2
+       - name: meta_reviews
+         identifier: meta_reviews
+       - name: metacritic
+         identifier: metacritic
+       - name: playtime_avg
+         identifier: playtime_avg
+       - name: reviews_no_sentiment
+         identifier: reviews_no_sentiment
+       - name: sentiment_review
+         identifier: sentiment_review
+       - name: tags
+         identifier: tags
